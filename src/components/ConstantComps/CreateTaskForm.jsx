@@ -2,7 +2,7 @@ import React from 'react'
 
 function CreateTaskForm() {
   return (
-            <div className='p-5 bg-[#1c1c1c] mt-14 rounded'>
+            <div className='p-5 bg-[#1c1c1c] mt-12 rounded'>
                 <form className='flex flex-wrap items-start justify-between'>
                     <div className='w-1/2'>
                         <div>
