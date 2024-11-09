@@ -5,7 +5,7 @@ export const AuthContext = createContext()
 function AuthProvider({children}) {
   return (
     <div>
-        <AuthContext.Provider value={Om}>
+        <AuthContext.Provider value={"Om"}>
             {children}
         </AuthContext.Provider>
     </div>
