@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const employees = [
   {
     "id": 1,
@@ -209,7 +211,6 @@ const admin = [
     "password": "123"
   }
 ];
-
 
 export const setLocalStorage = () => {
   localStorage.setItem("employees", JSON.stringify(employees))
