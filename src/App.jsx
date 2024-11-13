@@ -3,7 +3,6 @@ import AdminDashboard from './components/Dashboard/AdminDashboard'
 import Login from './components/Auth/Login'
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 import { AuthContext } from './context/AuthProvider'
-import { getLocalStorage, setLocalStorage } from './utils/LocalStorage'
 
 function App() {
 
@@ -42,7 +41,7 @@ function App() {
   return (
     <>
       {!user ? <Login handleLogin={handleLogin}/>: ""}
-      {user === "admin" ? <AdminDashboard data={loggedInUserData}/> : (user === "employee" ? <EmployeeDashboard data={loggedInUserData}/> : null)}
+      {user === "admin" ? <AdminDashboard changeUser={setUser} data={loggedInUserData}/> : (user === "employee" ? <EmployeeDashboard changeUser={setUser} data={loggedInUserData}/> : null)}
     </>
   )
 }
